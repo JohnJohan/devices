@@ -1,0 +1,11 @@
+public class VolumeDown implements Command{
+    private Radio radio;
+
+    public VolumeDown(Radio radio) {
+        this.radio = radio;
+    }
+    @Override
+    public void execute(){
+        radio.switchOff();
+    }
+}
