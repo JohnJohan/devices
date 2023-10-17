@@ -1,0 +1,11 @@
+public class VolumeUp implements Command{
+    private Radio radio;
+
+    public VolumeUp(Radio radio) {
+        this.radio = radio;
+    }
+    @Override
+    public void execute(){
+        radio.switchOn();
+    }
+}
