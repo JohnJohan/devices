@@ -1,0 +1,11 @@
+public class PowerOn implements Command{
+    private Fan fan;
+
+    public PowerOn(Fan fan) {
+        this.fan = fan;
+    }
+    @Override
+    public void execute(){
+        fan.switchOn();
+    }
+}
