@@ -1,0 +1,38 @@
+public class ViewerApp {
+
+    public static void main (String[] args){
+
+        Fan myFan = new Fan();
+
+        RemoteControl rc = new RemoteControl();
+
+        PowerOn powerOn = new PowerOn(myFan);
+
+        rc.setCommand(powerOn);
+
+        rc.clickButton();
+
+        PowerOff powerOff = new PowerOff(myFan);
+
+        rc.setCommand(powerOff);
+
+        rc.clickButton();
+
+        Radio myRadio = new Radio();
+
+
+        VolumeUp volumeUp = new VolumeUp(myRadio);
+
+        rc.setCommand(volumeUp);
+
+        rc.clickButton();
+
+        VolumeDown volumeDown = new VolumeDown(myRadio);
+
+        rc.setCommand(volumeDown);
+
+        rc.clickButton();
+
+    }
+
+}
