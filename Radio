@@ -1,0 +1,10 @@
+public class  Radio {
+    public void switchOn() {
+
+        System.out.println("Radio is loud");
+    }
+    public void switchOff(){
+        System.out.println("Radio is quiet");
+
+    }
+}
